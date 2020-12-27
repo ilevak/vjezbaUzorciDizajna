@@ -9,6 +9,7 @@ import java.util.List;
 
 // TO DO: zelim napraviti random izgradnju kuce sa random prostorijama-- ne mora
 //bit normalno, moze bit smjesno nesto tipa 4 wc-a 
+//treba nest kontrolno il ono minimalni broj katova ili nezz kolko maks kat moze bit sirok i dugacak
 /**
  *
  * @author ivale
@@ -18,6 +19,7 @@ public class Kuca {
     
     private boolean bazenDvoriste;
     private boolean garazaDvoriste;
+    private boolean dvorište;
     
     private int brojVrata;
     private int  brojProzora;
@@ -111,6 +113,23 @@ public class Kuca {
     public void setVrstaKrova(String vrstaKrova) {
         this.vrstaKrova = vrstaKrova;
     }
+
+    public boolean isDvorište() {
+        return dvorište;
+    }
+
+    public void setDvorište(boolean dvorište) {
+        this.dvorište = dvorište;
+    }
+
+    public double getDuljina() {
+        return duljina;
+    }
+
+    public void setDuljina(double duljina) {
+        this.duljina = duljina;
+    }
+    
     
     
 }

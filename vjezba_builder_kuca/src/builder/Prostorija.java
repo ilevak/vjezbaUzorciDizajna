@@ -24,6 +24,7 @@ public class Prostorija {
     private String bojaZidova;
     private String[] namjestaj;
     private String[] elektronika;
+    private String[] sanitarije;
 
     public Prostorija() {
     }
@@ -101,6 +102,14 @@ public class Prostorija {
 
     public void setElektronika(String[] elektronika) {
         this.elektronika = elektronika;
+    }
+
+    public String[] getSanitarije() {
+        return sanitarije;
+    }
+
+    public void setSanitarije(String[] sanitarije) {
+        this.sanitarije = sanitarije;
     }
 
 

@@ -116,8 +116,10 @@ public class ProstorijaBuildImpl implements ProstorijaBuilder {
         return this;
     }
 
-
-    
-    
+    @Override
+    public ProstorijaBuilder setSanitarije(String[] sanitarije) {
+        prostorija.setSanitarije(sanitarije);
+        return this;
+    }
 
 }

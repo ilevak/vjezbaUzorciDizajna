@@ -24,11 +24,11 @@ public class ProstorijaBuildDirektor {
         String[] namjestaj={"fotelja", "dvosjed", "stolic", "komoda"};
         String[] elektronika={"televizor"};
         return new ProstorijaBuildImpl()
-                .setBojaZidova("plava")
-                .setBrojProzora(0)
-                .setBrojVrata(0)
-                .setDuljina(0)
-                .setSirina(0)
+                .setBojaZidova("zelena")
+                .setBrojProzora(3)
+                .setBrojVrata(1)
+                .setDuljina(3)
+                .setSirina(3)
                 .setNaziv("dnevni boravak")
                 .setNamjestaj(namjestaj)
                 .setElektronika(elektronika)
@@ -36,31 +36,34 @@ public class ProstorijaBuildDirektor {
     }
     
     public Prostorija izgradiKuhinju(){
-        String[] namjestaj = {"stol", "stolica", "ormarici", "sudoper"};
+        String[] namjestaj = {"stol", "stolica", "ormarici"};
+        String[] sanitarije={"sudoper"};
         String[] elektronika = {"pecnica", "frizider", "suderica", "stednjak"};
         return new ProstorijaBuildImpl()
-                .setBojaZidova("plava")
-                .setBrojProzora(0)
-                .setBrojVrata(0)
-                .setDuljina(0)
-                .setSirina(0)
-                .setNaziv("dnevni boravak")
+                .setBojaZidova("crvena")
+                .setBrojProzora(2)
+                .setBrojVrata(1)
+                .setDuljina(4)
+                .setSirina(4)
+                .setNaziv("kuhinja")
                 .setNamjestaj(namjestaj)
                 .setElektronika(elektronika)
+                .setSanitarije(sanitarije)
                 .build();
     }
     
-    public Prostorija izgradiWc(){
+    public Prostorija izgradiToalet(){
         String[] namjestaj = {"ormaric"};
-        String[] kupaonskaOprema = {"školjka", "umivaonik", "bide", "tušKabina"};
+        String[] sanitarije = {"školjka", "umivaonik", "bide", "tušKabina"};
         return new ProstorijaBuildImpl()
                 .setBojaZidova("plava")
-                .setBrojProzora(0)
-                .setBrojVrata(0)
-                .setDuljina(0)
-                .setSirina(0)
+                .setBrojProzora(1)
+                .setBrojVrata(1)
+                .setDuljina(3)
+                .setSirina(2)
                 .setNaziv("toalet")
                 .setNamjestaj(namjestaj)
+                .setSanitarije(sanitarije)
                 .build();
     }
     

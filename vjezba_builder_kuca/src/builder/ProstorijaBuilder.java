@@ -9,7 +9,7 @@ package builder;
  *
  * @author ivale
  */
-interface ProstorijaBuilder {
+public interface ProstorijaBuilder {
 
     Prostorija build();
 
@@ -30,5 +30,7 @@ interface ProstorijaBuilder {
     ProstorijaBuilder setNamjestaj(String[] namjestaj);
     
     ProstorijaBuilder setElektronika(String[] elektronika);
+    
+    ProstorijaBuilder setSanitarije(String[] sanitarije);
 
 }

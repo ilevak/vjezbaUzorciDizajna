@@ -5,6 +5,7 @@
  */
 package vjezba_builder_kuca;
 
+import builder.Namjestaj;
 import builder.Prostorija;
 import builder.ProstorijaBuildDirektor;
 import builder.ProstorijaBuildImpl;
@@ -25,7 +26,8 @@ public class Vjezba_builder_kuca {
         Prostorija dnevniBoravak = prostorijaDirektor.izgradiDnevniBoravak();
         Prostorija toalet = prostorijaDirektor.izgradiToalet();
         Prostorija kuhinja = prostorijaDirektor.izgradiKuhinju();
-        String[] namjestajSpavSobe={"ormar","krevet", "ormar"};
+        String[] namjestajSpavSobe={Namjestaj.nocniOrmaric.name(),Namjestaj.krevet.name(),
+        Namjestaj.ormar.name(), Namjestaj.nocniOrmaric.name()};
         Prostorija spavaca = new ProstorijaBuildImpl()
                 .setBojaZidova("siva")
                 .setBrojProzora(5)

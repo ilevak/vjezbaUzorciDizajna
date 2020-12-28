@@ -21,7 +21,8 @@ public class ProstorijaBuildDirektor {
     }
     
     public Prostorija izgradiDnevniBoravak(){
-        String[] namjestaj={"fotelja", "dvosjed", "stolic", "komoda"};
+        String[] namjestaj={Namjestaj.dvosjed.name(), Namjestaj.fotelja.name(),
+            Namjestaj.trosjed.name(), Namjestaj.komoda.name()};
         String[] elektronika={"televizor"};
         return new ProstorijaBuildImpl()
                 .setBojaZidova("zelena")
@@ -36,9 +37,11 @@ public class ProstorijaBuildDirektor {
     }
     
     public Prostorija izgradiKuhinju(){
-        String[] namjestaj = {"stol", "stolica", "ormarici"};
-        String[] sanitarije={"sudoper"};
-        String[] elektronika = {"pecnica", "frizider", "suderica", "stednjak"};
+        String[] namjestaj = {Namjestaj.stol.name(), Namjestaj.stolice.name(),
+            Namjestaj.ormaric.name()};
+        String[] sanitarije={Sanitarije.sudoper.name()};
+        String[] elektronika = {Elektronika.pecnica.name(), Elektronika.frizider.name(),
+            Elektronika.suderica.name(), Elektronika.stednjak.name()};
         return new ProstorijaBuildImpl()
                 .setBojaZidova("crvena")
                 .setBrojProzora(2)
@@ -53,8 +56,9 @@ public class ProstorijaBuildDirektor {
     }
     
     public Prostorija izgradiToalet(){
-        String[] namjestaj = {"ormaric"};
-        String[] sanitarije = {"školjka", "umivaonik", "bide", "tušKabina"};
+        String[] namjestaj = {Namjestaj.ormaric.name()};
+        String[] sanitarije = {Sanitarije.skoljka.name(), Sanitarije.umivaonik.name(),
+            Sanitarije.bide.name(), Sanitarije.tusKabina.name()};
         return new ProstorijaBuildImpl()
                 .setBojaZidova("plava")
                 .setBrojProzora(1)

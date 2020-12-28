@@ -9,6 +9,7 @@ package builder;
  *
  * @author ivale
  */
+
 public class Prostorija {
     
     private String naziv;
